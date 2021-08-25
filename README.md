@@ -18,6 +18,7 @@
  <ul>
     <li><b>Backend:</b></li>
     <ul>
+        <li> Docker <li>
         <li>Spring boot (Core, WEB, JPA)</li>
         <li>Hibernate</li>
         <li>Maven</li>
