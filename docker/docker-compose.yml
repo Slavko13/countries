@@ -1,0 +1,15 @@
+version: "3.3"
+
+services:
+  countries:
+    image: postgres:12.1-alpine
+    container_name: countries
+    restart: unless-stopped
+    ports:
+      - 5431:5432
+    environment:
+      POSTGRES_USER: appUser
+      POSTGRES_PASSWORD: 13
+      POSTGRES_DB: countries
+      PGDATA: /var/lib/postgresql/pgdata
+      TZ: "Europe/Moscow"
