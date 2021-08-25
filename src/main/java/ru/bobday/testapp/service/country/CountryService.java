@@ -72,6 +72,8 @@ public class CountryService implements CountryCrudMainService, CountryFilterServ
             country.setTopLevelDomain(Arrays.asList(countryRequestDTO.getTopLevelDomain()));
             country.setCurrencies(Arrays.asList(countryRequestDTO.getCurrencies()));
             country.setLanguages(Arrays.asList(countryRequestDTO.getLanguages()));
+            country.setLatLng(Arrays.asList(countryRequestDTO.getLatlng()));
+            country.setRegionalBlocs(Arrays.asList(countryRequestDTO.getRegionalBlocs()));
             countries.add(country);
         }
         return (List<Country>) countryRepo.saveAll(countries);

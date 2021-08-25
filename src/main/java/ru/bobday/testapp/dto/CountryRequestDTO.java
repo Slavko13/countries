@@ -19,11 +19,12 @@ public class CountryRequestDTO {
     private String capital;
     private String name;
     private Long population;
-    private Double[] latLng;
+    private Double[] latlng;
     private String[] topLevelDomain;
     private Country.Currency[] currencies;
     private Country.Languages[] languages;
     private Country.Translations translations;
+    private Country.RegionalBlocs[] regionalBlocs;
     private String flag;
 
 }

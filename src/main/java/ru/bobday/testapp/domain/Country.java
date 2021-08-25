@@ -2,10 +2,7 @@ package ru.bobday.testapp.domain;
 
 
 import lombok.*;
-import ru.bobday.testapp.domain.general.json.converter.ListCurrencyToStringConverter;
-import ru.bobday.testapp.domain.general.json.converter.TranslationsToStringConverter;
-import ru.bobday.testapp.domain.general.json.converter.ListStringToStringConverter;
-import ru.bobday.testapp.domain.general.json.converter.ListLanguagesToStringConverter;
+import ru.bobday.testapp.domain.general.json.converter.*;
 
 import javax.persistence.*;
 import java.util.List;
@@ -30,8 +27,9 @@ public class Country {
 
     private Long population;
 
-//    @Column(name = "lat_lng")
-//    private List<Double> latLng;
+    @Column(name = "lat_lng")
+    @Convert(converter = ListDoubleToString.class)
+    private List<Double> latLng;
 
     @Column(name = "top_level_domain", length = 5600)
     @Convert(converter = ListStringToStringConverter.class)
@@ -50,6 +48,11 @@ public class Country {
     private Translations translations;
 
     private String flag;
+
+    @Convert(converter = ListRegionalBlocsToStringConverter.class)
+    @Column(length = 5600, name = "regional_blocs")
+    private List<RegionalBlocs> regionalBlocs;
+
 
     @Data
     @AllArgsConstructor
@@ -91,5 +94,17 @@ public class Country {
         private String fa;
 
     }
-    //TODO: regionalBlocs think about that
+
+    @Data
+    @AllArgsConstructor
+    @NoArgsConstructor
+    public static class RegionalBlocs {
+
+        private String acronym;
+        private String name;
+        private String[] otherAcronyms;
+        private String[] otherNames;
+
+    }
+
 }
