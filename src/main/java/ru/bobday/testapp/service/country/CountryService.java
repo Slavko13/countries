@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import ru.bobday.testapp.domain.Country;
 import ru.bobday.testapp.dto.CountryRequestDTO;
 import ru.bobday.testapp.exception.simpleException.NotFoundException;
-import ru.bobday.testapp.repository.CountryRepo;
+import ru.bobday.testapp.repository.country.CountryRepo;
 import ru.bobday.testapp.service.json.JsonRequestService;
 
 import java.util.ArrayList;
@@ -59,7 +59,6 @@ public class CountryService implements CountryCrudMainService, CountryFilterServ
     private List<Country> downloadAndSaveAllCountries() throws ParseException {
         String jsonResponse =  jsonRequestService.getJsonFromUrlApi(url);
         JsonArray jsonArray =  JsonParser.parseString(jsonResponse).getAsJsonArray();
-        Gson gson = new Gson();
         List<Country> countries = new ArrayList<>();
         List<CountryRequestDTO> countryRequestDTOS = new Gson().fromJson(jsonArray, new TypeToken<List<CountryRequestDTO>>() {}.getType());
 
