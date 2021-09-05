@@ -3,6 +3,7 @@ package ru.bobday.testapp.domain;
 
 import lombok.*;
 import ru.bobday.testapp.domain.general.json.converter.*;
+import ru.bobday.testapp.domain.user.CountryUser;
 
 import javax.persistence.*;
 import java.util.List;
@@ -52,6 +53,11 @@ public class Country {
     @Convert(converter = ListRegionalBlocsToStringConverter.class)
     @Column(length = 5600, name = "regional_blocs")
     private List<RegionalBlocs> regionalBlocs;
+
+
+
+    @OneToMany(mappedBy = "country", cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    private List<CountryUser> countryUsers;
 
 
     @Data
