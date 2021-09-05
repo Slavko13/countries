@@ -1,7 +1,6 @@
 package ru.bobday.testapp.service.json;
 
 
-import com.google.gson.JsonParser;
 import org.json.simple.parser.ParseException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;

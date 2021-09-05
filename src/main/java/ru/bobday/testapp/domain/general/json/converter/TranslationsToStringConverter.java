@@ -6,7 +6,6 @@ import ru.bobday.testapp.domain.Country;
 
 import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;
-import java.util.List;
 
 @Converter
 public class TranslationsToStringConverter implements AttributeConverter<Country.Translations, String> {

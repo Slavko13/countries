@@ -1,4 +1,4 @@
-package ru.bobday.testapp.config;
+package ru.bobday.testapp.config.database;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;

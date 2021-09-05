@@ -3,16 +3,10 @@ package ru.bobday.testapp.domain.general.json.converter;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import org.apache.commons.lang3.StringUtils;
 import ru.bobday.testapp.domain.Country;
-import ru.bobday.testapp.domain.general.base.CountryFieldBase;
-import ru.bobday.testapp.dto.CountryRequestDTO;
 
 import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 @Converter

@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
-import ru.bobday.testapp.exception.dto.ErrorDetails;
 import ru.bobday.testapp.exception.simpleException.BadRequestException;
 import ru.bobday.testapp.exception.simpleException.NotAllowedException;
 import ru.bobday.testapp.exception.simpleException.NotFoundException;
 import ru.bobday.testapp.exception.simpleException.TeapotException;
+import ru.bobday.testapp.exception.dto.ErrorDetails;
 
 import java.util.Date;
 

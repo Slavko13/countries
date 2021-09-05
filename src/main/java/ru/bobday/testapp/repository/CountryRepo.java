@@ -5,7 +5,6 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 import ru.bobday.testapp.domain.Country;
 
-import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 
