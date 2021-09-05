@@ -23,8 +23,9 @@
         <li>Hibernate</li>
         <li>Maven</li>
         <li>PostgreSQL</li>
+        <li> Swagger2 </li>
     </ul>
  </ul>
  
- <h3>Использование api описано на странице в WIKI</h3>
-   
+ <h3>Использование api описано на странице в WIKI или через Swagger http://localhost:8080/v2/api-docs</h3>
+    
