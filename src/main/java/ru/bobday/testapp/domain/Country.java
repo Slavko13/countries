@@ -17,6 +17,10 @@ import java.util.List;
 @EqualsAndHashCode
 public class Country {
 
+    public Country(Integer countryId) {
+        this.countryId = countryId;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
