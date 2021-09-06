@@ -1,4 +1,4 @@
-package ru.bobday.testapp.dto;
+package ru.bobday.testapp.dto.valute;
 
 
 import lombok.AllArgsConstructor;

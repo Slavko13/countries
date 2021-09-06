@@ -4,9 +4,11 @@ package ru.bobday.testapp.domain.user;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.GenericGenerator;
 import ru.bobday.testapp.domain.Country;
 
 import javax.persistence.*;
+import java.util.UUID;
 
 @Entity
 @Table(name = "users")
@@ -15,11 +17,9 @@ import javax.persistence.*;
 @NoArgsConstructor
 public class CountryUser {
 
-
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id")
-    private Integer userID;
+    @Column(name = "id")
+    private UUID id;
 
     @Column(name = "first_name")
     private String firstName;

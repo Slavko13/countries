@@ -1,4 +1,4 @@
-package ru.bobday.testapp.dto;
+package ru.bobday.testapp.dto.country;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
