@@ -6,7 +6,7 @@ import org.json.simple.parser.ParseException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import ru.bobday.testapp.domain.valute.Valute;
-import ru.bobday.testapp.dto.ValuteRequestDTO;
+import ru.bobday.testapp.dto.valute.ValuteRequestDTO;
 import ru.bobday.testapp.repository.valute.ValuteRepo;
 import ru.bobday.testapp.service.json.JsonRequestService;
 

@@ -9,7 +9,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import ru.bobday.testapp.domain.Country;
-import ru.bobday.testapp.dto.CountryRequestDTO;
+import ru.bobday.testapp.dto.country.CountryRequestDTO;
 import ru.bobday.testapp.exception.simpleException.NotFoundException;
 import ru.bobday.testapp.repository.country.CountryRepo;
 import ru.bobday.testapp.service.json.JsonRequestService;
