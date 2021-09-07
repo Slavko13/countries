@@ -30,6 +30,12 @@
         <li> Swagger2 </li>
         <li> Keycloack </li>   
    </ul>
+   <li><b>Frontend:</b></li>
+    <ul>
+        <li> Vaadin </li>
+          
+   </ul>
+ 
  </ul>
  
  <h3>Использование api описано на странице в WIKI или через Swagger http://localhost:8080/v2/api-docs</h3>
