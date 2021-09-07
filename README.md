@@ -15,6 +15,7 @@
     </li>
     <li> Получение погоды для столицы данной страны</li>
     <li> Конвертация вашей выбранной валюты в валюту страны</li>
+ 
  </ul>
  
  
@@ -28,7 +29,8 @@
         <li>Maven</li>
         <li>PostgreSQL</li>
         <li> Swagger2 </li>
-        <li> Keycloack </li>   
+        <li> Keycloack </li>
+        <li> Elasticsearch/Kibana/Logstash </li> 
    </ul>
    <li><b>Frontend:</b></li>
     <ul>
